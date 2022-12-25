@@ -1,0 +1,96 @@
+body {
+    background-color:  hsl(233, 47%, 7%);
+    padding: 300px;
+}
+
+
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:50vw ;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%) ;
+    margin: 200, auto;
+    align-items: center;
+    padding: 40px 50px;
+    border-radius: 10px 0px 0px 10px;
+    display: inline-block;
+
+}
+
+.live {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 20px 20px 10px 10px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    padding-left: 10px;
+}
+
+h5 { 
+    color:hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    line-height: 1.7;
+    padding-left: 10px;
+}
+
+
+
+h6 {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 1.2px;
+    margin-top: -15px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+h2 {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.picture {
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 0px 15px 15px 0px;
+
+}
+
+.picture::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(126, 53, 172, 0.6);
+    border-radius: 0px 10px 10px 0px;
+}
+
+@media screen and (max-width: 500px) { 
+    body {
+        font-weight: 600;
+}
+}
+
+
